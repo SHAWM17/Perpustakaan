@@ -1,17 +1,21 @@
 public class daftarBuku {
-    String newJudul;
-    String newPenulis;
-    int newTahunTerbit;
+    String Judul;
+    String Penulis;
+    int TahunTerbit;
 
     public daftarBuku(String judul, String penulis, int tahunTerbit){
-        newJudul = judul;
-        newPenulis = penulis;
-        newTahunTerbit = tahunTerbit;
+        this.Judul = judul;
+        this.Penulis = penulis;
+        this.TahunTerbit = tahunTerbit;
+    }
+
+    public String getTitle(){
+        return this.Judul;
     }
 
     public void tampilkanInfo(){
-        System.out.println("Judul: " + newJudul);
-        System.out.println("Penulis: " + newPenulis);
-        System.out.println("Tahun Terbit: " + newTahunTerbit);
+        System.out.println("Judul: " + Judul);
+        System.out.println("Penulis: " + Penulis);
+        System.out.println("Tahun Terbit: " + TahunTerbit);
     }
 }
